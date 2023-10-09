@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "llm-scraper"
+version = "0.1.0"
+description = ""
+authors = ["Jordan Parker <jordanhparker6@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "llm_scraper" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+seleniumbase = "^4.19.2"
+pydantic = "^2.4.2"
+tenacity = "^8.2.3"
+tqdm = "^4.66.1"
+structlog = "^23.2.0"
+langchain = "^0.0.311"
+openai = "^0.28.1"
+lxml = "^4.9.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+ipykernel = "^6.25.2"
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
